@@ -1,0 +1,1498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Square-Cut Research and Innovation Private Limited | Startup India Recognized | Startup Bihar Funded</title>
+  <meta name="description" content="Square-Cut Research and Innovation Private Limited is an engineering innovation startup focused on patented technologies including In-situ Cricket Pitch changer technology, Flood Management & Energy Generation Cum Utilization, LEA assisting tools, and working domains including Cyber Laws and Cyber Security. Recognized under Startup India with DIPP recognition number DIPP135531 and funded under Startup Bihar." />
+  <meta name="keywords" content="Engineering Innovation, Cricket Technology, Patent, Startup India, Startup Bihar, Flood Management, Energy Generation, LEA Assisting Tools, Cyber Laws, Cyber Security, Innovation, Engineering Startup" />
+  <meta name="theme-color" content="#07130d" />
+  <meta name="referrer" content="strict-origin-when-cross-origin" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; script-src 'self' 'sha256-XNhJd+4owhZ7BRzLx4bLkBFTkU8NGX4/9HcPuySmtnI='; style-src 'self' 'sha256-gnD1VpsNoqqygZhxoM2Ojv2dXWzmZVHbWWluHxwTarU='; img-src 'self' https://images.unsplash.com data:; media-src 'self'; frame-src https://www.google.com; connect-src 'none'; form-action 'self' mailto:; frame-ancestors 'none'; upgrade-insecure-requests; require-trusted-types-for 'script'; trusted-types default" />
+  <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+  <meta http-equiv="Permissions-Policy" content="camera=(), microphone=(), geolocation=(), payment=(), usb=(), accelerometer=(), gyroscope=(), magnetometer=(), interest-cohort=()" />
+  <style>
+    :root {
+      --bg: #07130d;
+      --bg-soft: #0d1f15;
+      --panel: rgba(13, 31, 21, 0.82);
+      --panel-strong: rgba(18, 42, 29, 0.94);
+      --text: #f5fff8;
+      --muted: #b8c8bc;
+      --green: #24b45b;
+      --green-dark: #0f7d3a;
+      --gold: #f4c45c;
+      --line: rgba(255, 255, 255, 0.14);
+      --shadow: 0 24px 70px rgba(0, 0, 0, 0.32);
+      --radius: 8px;
+      --max: 1180px;
+      color-scheme: dark;
+    }
+
+    body.light {
+      --bg: #f5faf6;
+      --bg-soft: #eaf4ed;
+      --panel: rgba(255, 255, 255, 0.88);
+      --panel-strong: rgba(255, 255, 255, 0.96);
+      --text: #0a1a10;
+      --muted: #4c5f52;
+      --line: rgba(9, 40, 19, 0.14);
+      --shadow: 0 18px 50px rgba(20, 74, 41, 0.14);
+      color-scheme: light;
+    }
+
+    * { box-sizing: border-box; }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background:
+        radial-gradient(circle at 20% 10%, rgba(36, 180, 91, 0.18), transparent 28rem),
+        radial-gradient(circle at 75% 20%, rgba(244, 196, 92, 0.14), transparent 24rem),
+        linear-gradient(180deg, var(--bg), var(--bg-soft));
+      color: var(--text);
+      overflow-x: hidden;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      z-index: -3;
+      background-image:
+        linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+      background-size: 56px 56px;
+      mask-image: linear-gradient(to bottom, black, transparent 85%);
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    img, video, iframe {
+      max-width: 100%;
+      display: block;
+    }
+
+    button, input, textarea {
+      font: inherit;
+    }
+
+    .container {
+      width: min(var(--max), calc(100% - 32px));
+      margin-inline: auto;
+    }
+
+    .nav {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      backdrop-filter: blur(18px);
+      background: color-mix(in srgb, var(--bg) 84%, transparent);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .nav-inner {
+      min-height: 72px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-weight: 800;
+      letter-spacing: 0;
+    }
+
+    .brand-logo {
+      width: 48px;
+      height: 48px;
+      border-radius: var(--radius);
+      object-fit: cover;
+      border: 1px solid var(--line);
+      background: rgba(255, 255, 255, 0.08);
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 2px;
+    }
+
+    .nav-links a {
+      color: var(--muted);
+      padding: 10px 11px;
+      border-radius: 999px;
+      font-size: 0.92rem;
+      transition: color 0.2s ease, background 0.2s ease;
+    }
+
+    .nav-links a:hover {
+      color: var(--text);
+      background: rgba(36, 180, 91, 0.14);
+    }
+
+    .nav-actions {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .icon-btn, .menu-btn {
+      width: 42px;
+      height: 42px;
+      border: 1px solid var(--line);
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      background: transparent;
+      color: var(--text);
+      cursor: pointer;
+      transition: transform 0.2s ease, border-color 0.2s ease, background 0.2s ease;
+    }
+
+    .icon-btn:hover, .menu-btn:hover {
+      transform: translateY(-1px);
+      border-color: rgba(244, 196, 92, 0.7);
+      background: rgba(244, 196, 92, 0.1);
+    }
+
+    .menu-btn { display: none; }
+
+    .hero {
+      position: relative;
+      min-height: calc(100svh - 72px);
+      display: grid;
+      align-items: center;
+      padding: 84px 0 44px;
+      overflow: hidden;
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      z-index: -2;
+      background:
+        linear-gradient(to bottom, rgba(7, 19, 13, 0.18), var(--bg)),
+        url("https://images.unsplash.com/photo-1531415074968-036ba1b575da?auto=format&fit=crop&w=1800&q=80") center / cover;
+      filter: saturate(0.95) contrast(1.06);
+      transform: scale(1.03);
+      animation: slowPan 22s ease-in-out infinite alternate;
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      left: 50%;
+      bottom: -18%;
+      width: min(980px, 110vw);
+      aspect-ratio: 2.8 / 1;
+      transform: translateX(-50%);
+      z-index: -1;
+      background:
+        radial-gradient(ellipse at center, rgba(77, 191, 93, 0.42), transparent 62%),
+        repeating-linear-gradient(90deg, rgba(255, 255, 255, 0.14) 0 2px, transparent 2px 116px);
+      border-radius: 50%;
+      opacity: 0.75;
+      filter: blur(0.2px);
+    }
+
+    .particles {
+      position: absolute;
+      inset: 0;
+      z-index: -1;
+      overflow: hidden;
+    }
+
+    .particle {
+      position: absolute;
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      background: rgba(244, 196, 92, 0.75);
+      animation: floatUp var(--duration) linear infinite;
+      left: var(--x);
+      bottom: -20px;
+      opacity: 0;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 360px;
+      align-items: end;
+      gap: 40px;
+    }
+
+    .eyebrow {
+      color: var(--gold);
+      font-size: 0.86rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      margin-bottom: 16px;
+    }
+
+    h1, h2, h3, p {
+      margin-top: 0;
+    }
+
+    h1 {
+      max-width: 850px;
+      font-size: clamp(3rem, 8vw, 6.9rem);
+      line-height: 0.95;
+      letter-spacing: 0;
+      margin-bottom: 24px;
+    }
+
+    .hero p {
+      max-width: 610px;
+      color: rgba(245, 255, 248, 0.88);
+      font-size: clamp(1.05rem, 2vw, 1.28rem);
+      line-height: 1.7;
+      margin-bottom: 30px;
+    }
+
+    .btn-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .btn {
+      position: relative;
+      min-height: 48px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 9px;
+      padding: 12px 20px;
+      border: 0;
+      border-radius: 999px;
+      color: white;
+      font-weight: 800;
+      cursor: pointer;
+      overflow: hidden;
+      background: linear-gradient(135deg, var(--green), var(--green-dark));
+      box-shadow: 0 14px 36px rgba(36, 180, 91, 0.26);
+    }
+
+    .btn.secondary {
+      background: rgba(255, 255, 255, 0.1);
+      border: 1px solid rgba(255, 255, 255, 0.25);
+      box-shadow: none;
+    }
+
+    .btn::after {
+      content: "";
+      position: absolute;
+      inset: auto auto 50% 50%;
+      width: 0;
+      height: 0;
+      border-radius: 50%;
+      transform: translate(-50%, 50%);
+      background: rgba(255, 255, 255, 0.26);
+      transition: width 0.45s ease, height 0.45s ease;
+    }
+
+    .btn:hover::after {
+      width: 260px;
+      height: 260px;
+    }
+
+    .hero-card {
+      padding: 22px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: rgba(7, 19, 13, 0.7);
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(18px);
+    }
+
+    .hero-card strong {
+      display: block;
+      color: var(--gold);
+      font-size: 2rem;
+      margin-bottom: 8px;
+    }
+
+    .hero-card span {
+      color: rgba(245, 255, 248, 0.76);
+      line-height: 1.55;
+    }
+
+    section {
+      padding: 88px 0;
+      scroll-margin-top: 88px;
+    }
+
+    .section-head {
+      display: flex;
+      align-items: end;
+      justify-content: space-between;
+      gap: 24px;
+      margin-bottom: 30px;
+    }
+
+    .section-head h2 {
+      font-size: clamp(2rem, 4vw, 3.4rem);
+      line-height: 1.05;
+      margin-bottom: 0;
+    }
+
+    .section-head p {
+      color: var(--muted);
+      line-height: 1.7;
+      max-width: 560px;
+      margin-bottom: 0;
+    }
+
+    .grid {
+      display: grid;
+      gap: 18px;
+    }
+
+    .grid.three { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    .grid.four { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+    .grid.two { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+
+    .card {
+      position: relative;
+      min-height: 170px;
+      padding: 24px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: var(--panel);
+      box-shadow: var(--shadow);
+      overflow: hidden;
+      transition: transform 0.24s ease, border-color 0.24s ease, background 0.24s ease;
+    }
+
+    .card::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(135deg, rgba(36, 180, 91, 0.18), transparent 42%, rgba(244, 196, 92, 0.1));
+      opacity: 0;
+      transition: opacity 0.24s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+      border-color: rgba(244, 196, 92, 0.5);
+    }
+
+    .card:hover::before { opacity: 1; }
+
+    .card > * {
+      position: relative;
+      z-index: 1;
+    }
+
+    .card h3 {
+      font-size: 1.18rem;
+      margin-bottom: 12px;
+    }
+
+    .card p, .card li {
+      color: var(--muted);
+      line-height: 1.65;
+    }
+
+    .check {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      min-height: 112px;
+    }
+
+    .check .tick, .badge-icon {
+      flex: 0 0 auto;
+      width: 42px;
+      height: 42px;
+      display: grid;
+      place-items: center;
+      border-radius: 50%;
+      color: #06150c;
+      background: var(--gold);
+      font-weight: 900;
+    }
+
+    .about-wrap {
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      gap: 18px;
+      align-items: stretch;
+    }
+
+    .about-copy {
+      padding: 30px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: var(--panel);
+    }
+
+    .about-copy p {
+      color: var(--muted);
+      line-height: 1.78;
+    }
+
+    .split-stack {
+      display: grid;
+      gap: 18px;
+    }
+
+    .badge-card {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      min-height: 132px;
+    }
+
+    .status {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      min-height: 30px;
+      padding: 5px 10px;
+      border-radius: 999px;
+      color: #07130d;
+      background: var(--gold);
+      font-size: 0.82rem;
+      font-weight: 900;
+    }
+
+    .media-frame {
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: #020705;
+      overflow: hidden;
+      box-shadow: var(--shadow);
+    }
+
+    .video-box {
+      position: relative;
+      aspect-ratio: 16 / 9;
+      background:
+        linear-gradient(rgba(7, 19, 13, 0.22), rgba(7, 19, 13, 0.72)),
+        url("https://images.unsplash.com/photo-1540747913346-19e32dc3e97e?auto=format&fit=crop&w=1400&q=80") center / cover;
+    }
+
+    .video-box video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      background: transparent;
+    }
+
+    .video-note {
+      padding: 14px 18px;
+      color: var(--muted);
+      border-top: 1px solid var(--line);
+      background: var(--panel-strong);
+      font-size: 0.94rem;
+    }
+
+    .gallery {
+      grid-template-columns: 1.2fr 0.8fr 1fr;
+      grid-auto-rows: 230px;
+    }
+
+    .gallery figure {
+      position: relative;
+      margin: 0;
+      border-radius: var(--radius);
+      overflow: hidden;
+      border: 1px solid var(--line);
+      background: var(--panel);
+    }
+
+    .gallery-button {
+      width: 100%;
+      height: 100%;
+      padding: 0;
+      border: 0;
+      display: block;
+      color: inherit;
+      background: transparent;
+      cursor: pointer;
+      text-align: inherit;
+    }
+
+    .gallery figure:first-child {
+      grid-row: span 2;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.45s ease;
+    }
+
+    .gallery figure:hover img {
+      transform: scale(1.06);
+    }
+
+    .gallery figcaption {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      padding: 34px 16px 14px;
+      background: linear-gradient(transparent, rgba(0, 0, 0, 0.72));
+      color: white;
+      font-weight: 800;
+    }
+
+    .doc-panel {
+      position: fixed;
+      inset: 0;
+      z-index: 40;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 18px;
+      background: rgba(0, 0, 0, 0.64);
+      backdrop-filter: blur(10px);
+    }
+
+    .doc-panel.open {
+      display: flex;
+    }
+
+    .doc-dialog {
+      width: min(520px, 100%);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: var(--panel-strong);
+      box-shadow: var(--shadow);
+      padding: 22px;
+    }
+
+    .doc-head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      margin-bottom: 18px;
+    }
+
+    .doc-head h3 {
+      margin: 0;
+      font-size: 1.35rem;
+    }
+
+    .doc-links {
+      display: grid;
+      gap: 12px;
+    }
+
+    .doc-link {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      min-height: 58px;
+      padding: 14px 16px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      color: var(--text);
+      background: rgba(255, 255, 255, 0.06);
+      transition: border-color 0.2s ease, background 0.2s ease;
+    }
+
+    .doc-link:hover {
+      border-color: rgba(244, 196, 92, 0.6);
+      background: rgba(244, 196, 92, 0.1);
+    }
+
+    .news-dialog {
+      width: min(960px, 100%);
+      max-height: 88vh;
+      overflow: auto;
+    }
+
+    .news-grid {
+      display: grid;
+      gap: 14px;
+    }
+
+    .news-item {
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      overflow: hidden;
+      background: rgba(255, 255, 255, 0.06);
+    }
+
+    .news-item img {
+      width: 100%;
+      height: auto;
+    }
+
+    .news-item span {
+      display: block;
+      padding: 12px 14px;
+      color: var(--muted);
+      font-weight: 800;
+    }
+
+    .contact-wrap {
+      display: grid;
+      grid-template-columns: 1fr 0.82fr;
+      gap: 18px;
+    }
+
+    form {
+      padding: 24px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: var(--panel);
+      box-shadow: var(--shadow);
+    }
+
+    .field {
+      display: grid;
+      gap: 8px;
+      margin-bottom: 15px;
+    }
+
+    label {
+      color: var(--muted);
+      font-size: 0.92rem;
+      font-weight: 700;
+    }
+
+    input, textarea {
+      width: 100%;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: 13px 14px;
+      color: var(--text);
+      background: rgba(255, 255, 255, 0.06);
+      outline: none;
+      transition: border-color 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    input:focus, textarea:focus {
+      border-color: var(--green);
+      box-shadow: 0 0 0 4px rgba(36, 180, 91, 0.16);
+    }
+
+    textarea {
+      min-height: 140px;
+      resize: vertical;
+    }
+
+    .form-message {
+      min-height: 24px;
+      color: var(--gold);
+      font-size: 0.94rem;
+      margin-top: 12px;
+    }
+
+    .info-list {
+      display: grid;
+      gap: 14px;
+    }
+
+    .map-grid {
+      margin-top: 18px;
+    }
+
+    .map {
+      max-width: 420px;
+      aspect-ratio: 4 / 3;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      overflow: hidden;
+      background: var(--panel);
+    }
+
+    .map h3 {
+      margin: 0;
+      padding: 13px 14px;
+      border-bottom: 1px solid var(--line);
+      background: var(--panel-strong);
+      font-size: 0.96rem;
+    }
+
+    .map iframe {
+      width: 100%;
+      height: calc(100% - 48px);
+      border: 0;
+      filter: grayscale(0.2) contrast(1.05);
+    }
+
+    footer {
+      padding: 42px 0 28px;
+      border-top: 1px solid var(--line);
+      background: color-mix(in srgb, var(--bg) 90%, black);
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.2fr 1fr 1fr;
+      gap: 28px;
+      margin-bottom: 28px;
+    }
+
+    .footer-grid h3 {
+      margin-bottom: 12px;
+      font-size: 1rem;
+    }
+
+    .footer-grid p, .footer-grid a {
+      color: var(--muted);
+      line-height: 1.85;
+    }
+
+    .footer-links {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 3px 20px;
+    }
+
+    .socials {
+      display: flex;
+      gap: 10px;
+      margin-top: 16px;
+    }
+
+    .socials a {
+      width: 38px;
+      height: 38px;
+      display: grid;
+      place-items: center;
+      border-radius: 50%;
+      border: 1px solid var(--line);
+      color: var(--text);
+    }
+
+    .copyright {
+      padding-top: 22px;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 0.94rem;
+    }
+
+    .back-top {
+      position: fixed;
+      right: 18px;
+      bottom: 18px;
+      z-index: 18;
+      opacity: 0;
+      pointer-events: none;
+      transform: translateY(8px);
+    }
+
+    .back-top.show {
+      opacity: 1;
+      pointer-events: auto;
+      transform: translateY(0);
+    }
+
+    .reveal {
+      opacity: 0;
+      transform: translateY(24px);
+      transition: opacity 0.6s ease, transform 0.6s ease;
+    }
+
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    @keyframes slowPan {
+      from { transform: scale(1.03) translate3d(-8px, -5px, 0); }
+      to { transform: scale(1.08) translate3d(10px, 6px, 0); }
+    }
+
+    @keyframes floatUp {
+      0% { transform: translateY(0) translateX(0); opacity: 0; }
+      15% { opacity: 0.75; }
+      100% { transform: translateY(-110vh) translateX(38px); opacity: 0; }
+    }
+
+    @media (max-width: 980px) {
+      .menu-btn { display: grid; }
+
+      .nav-links {
+        position: absolute;
+        left: 16px;
+        right: 16px;
+        top: 78px;
+        display: none;
+        flex-direction: column;
+        align-items: stretch;
+        padding: 12px;
+        border: 1px solid var(--line);
+        border-radius: var(--radius);
+        background: var(--panel-strong);
+        box-shadow: var(--shadow);
+      }
+
+      .nav-links.open { display: flex; }
+
+      .nav-links a { border-radius: var(--radius); }
+
+      .hero-grid,
+      .about-wrap,
+      .contact-wrap,
+      .grid.two {
+        grid-template-columns: 1fr;
+      }
+
+      .grid.three,
+      .grid.four {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .section-head {
+        display: grid;
+      }
+
+      .gallery {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .container {
+        width: min(100% - 24px, var(--max));
+      }
+
+      .brand span {
+        max-width: 170px;
+        line-height: 1.15;
+      }
+
+      .hero {
+        min-height: auto;
+        padding-top: 62px;
+      }
+
+      h1 {
+        font-size: clamp(2.55rem, 15vw, 4.4rem);
+      }
+
+      section {
+        padding: 66px 0;
+      }
+
+      .grid.three,
+      .grid.four,
+      .gallery,
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .gallery {
+        grid-auto-rows: 220px;
+      }
+
+      .gallery figure:first-child {
+        grid-row: auto;
+      }
+
+      .footer-links {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav class="nav" aria-label="Main navigation">
+    <div class="container nav-inner">
+      <a class="brand" href="#home" aria-label="Square-Cut Research and Innovation Private Limited home">
+        <img class="brand-logo" src="company-logo.png" alt="Square-Cut logo" />
+        <span>Square-Cut Research and Innovation Private Limited</span>
+      </a>
+      <div class="nav-links" id="navLinks">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#technologies">Technologies</a>
+        <a href="#patents">Patents</a>
+        <a href="#video">Video</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="nav-actions">
+        <button class="icon-btn" id="themeToggle" type="button" aria-label="Toggle dark and light theme">◐</button>
+        <button class="menu-btn" id="menuToggle" type="button" aria-label="Open navigation menu">☰</button>
+      </div>
+    </div>
+  </nav>
+
+  <main id="home">
+    <section class="hero">
+      <div class="particles" aria-hidden="true">
+        <span class="particle" style="--x: 7%; --duration: 12s"></span>
+        <span class="particle" style="--x: 18%; --duration: 16s"></span>
+        <span class="particle" style="--x: 31%; --duration: 13s"></span>
+        <span class="particle" style="--x: 43%; --duration: 18s"></span>
+        <span class="particle" style="--x: 58%; --duration: 15s"></span>
+        <span class="particle" style="--x: 71%; --duration: 17s"></span>
+        <span class="particle" style="--x: 83%; --duration: 14s"></span>
+        <span class="particle" style="--x: 94%; --duration: 19s"></span>
+      </div>
+      <div class="container hero-grid">
+        <div>
+          <div class="eyebrow reveal">DIPP135531 · Startup India Recognized · Startup Bihar Funded</div>
+          <h1 class="reveal">In-situ Cricket Pitch changer technology</h1>
+          <p class="reveal">Square-Cut Research and Innovation Private Limited's Prime Research to Action intent.</p>
+          <div class="btn-row reveal">
+            <a class="btn" href="#technologies">Explore Technology</a>
+            <a class="btn secondary" href="#contact">Contact Us</a>
+          </div>
+        </div>
+        <aside class="hero-card reveal" aria-label="Patent driven engineering highlight">
+          <strong><span class="counter" data-target="419285">0</span></strong>
+          <span>Patent No. 419285 · Indian Patent · Granted</span>
+        </aside>
+      </div>
+    </section>
+
+    <section aria-label="Highlights">
+      <div class="container grid three">
+        <article class="card check reveal">
+          <span class="tick" aria-hidden="true">✓</span>
+          <h3>Startup India Recognized</h3>
+          <p>DIPP135531</p>
+        </article>
+        <article class="card check reveal">
+          <span class="tick" aria-hidden="true">✓</span>
+          <h3>Startup Bihar Funded</h3>
+          <p>Located at Bhagalpur, Bihar</p>
+        </article>
+        <article class="card check reveal">
+          <span class="tick" aria-hidden="true">✓</span>
+          <h3>Patent Driven Engineering</h3>
+        </article>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2>About the Startup</h2>
+          <p>Engineering innovation and intellectual property driven product development for practical technologies.</p>
+        </div>
+        <div class="about-wrap">
+          <div class="about-copy reveal">
+            <p>Square-Cut Research and Innovation Private Limited is focused on engineering innovation and intellectual property driven product development. It works on practical technologies aimed at solving real-world engineering challenges in sports infrastructure, cyber laws, cyber security and other engineering domains.</p>
+            <p>Founder: ILU KUMARI.</p>
+            <p>The startup is located at Bhagalpur, Bihar. It has been recognized under Startup India with DIPP recognition number DIPP135531 and has received support under Startup Bihar.</p>
+            <p>Its primary objective is to develop scalable engineering technologies backed by strong intellectual property.</p>
+          </div>
+          <div class="split-stack">
+            <article class="card reveal">
+              <h3>Mission</h3>
+              <p>To create practical engineering innovations capable of delivering measurable impact through research, design and patented technologies.</p>
+            </article>
+            <article class="card reveal">
+              <h3>Vision</h3>
+              <p>To become a globally recognized engineering innovation company through continuous research and intellectual property development.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="recognition">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2>Recognition</h2>
+          <p>Startup India recognition, DIPP135531, and Startup Bihar funding support.</p>
+        </div>
+        <div class="grid two">
+          <article class="card badge-card reveal">
+            <span class="badge-icon" aria-hidden="true">IN</span>
+            <div>
+              <h3>Startup India Recognition</h3>
+              <p>Recognized under Startup India. DIPP recognition number: DIPP135531.</p>
+            </div>
+          </article>
+          <article class="card badge-card reveal">
+            <span class="badge-icon" aria-hidden="true">BH</span>
+            <div>
+              <h3>Startup Bihar Funding Support</h3>
+              <p>Funded under Startup Bihar.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="technologies">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2>Technologies</h2>
+          <p>Focused engineering concepts across cricket infrastructure, cyber laws, cyber security and selected engineering domains.</p>
+        </div>
+        <div class="grid four">
+          <article class="card reveal">
+            <h3>In-situ Cricket Pitch changer technology</h3>
+            <p>Major project focused on advanced cricket infrastructure.</p>
+          </article>
+          <article class="card reveal">
+            <h3>Flood Management &amp; Energy Generation Cum Utilization</h3>
+            <p>One single technological invention focused on flood management and efficient energy generation cum utilization.</p>
+          </article>
+          <article class="card reveal">
+            <h3>LEA Assisting Tools</h3>
+            <p>Research and development related to LEA assisting tools.</p>
+          </article>
+          <article class="card reveal">
+            <h3>Cyber Laws and Cyber Security</h3>
+            <p>Working domain focused on cyber laws and cyber security.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="patents">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2>Patent Portfolio</h2>
+          <p>Patent items are listed without inventor names. International coverage includes Australia, UK, New Zealand and other PCT states.</p>
+        </div>
+        <div class="grid four">
+          <article class="card reveal">
+            <span class="status">Granted</span>
+            <h3>Patent No. 419285</h3>
+            <p>Indian Patent</p>
+          </article>
+          <article class="card reveal">
+            <span class="status">Patent</span>
+            <h3>South Africa Patent</h3>
+            <p>Status: Patent</p>
+          </article>
+          <article class="card reveal">
+            <span class="status">PCT States</span>
+            <h3>Australia, UK, New Zealand and Other PCT States</h3>
+            <p>Patent Portfolio</p>
+          </article>
+          <article class="card reveal">
+            <span class="status">Single Patent</span>
+            <h3>Flood Management &amp; Energy Generation Cum Utilization</h3>
+            <p>Single Patent</p>
+          </article>
+          <article class="card reveal">
+            <span class="status">Portfolio</span>
+            <h3>LEA Assisting Tools</h3>
+            <p>Patent Portfolio</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="video">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2>Intro Video / Technology Simulation</h2>
+          <p>Responsive video player with Hindi audio, controls and fullscreen support.</p>
+        </div>
+        <div class="media-frame reveal">
+          <div class="video-box">
+            <video controls preload="metadata" poster="https://images.unsplash.com/photo-1540747913346-19e32dc3e97e?auto=format&fit=crop&w=1400&q=80">
+              <source src="intro-video.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <div class="video-note">Intro and technology simulation video for Square-Cut Research and Innovation Private Limited.</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="gallery">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2>Gallery</h2>
+          <p>Visual references for stadium infrastructure, engineering design, patent documents, technology concepts and innovation.</p>
+        </div>
+        <div class="grid gallery">
+          <figure class="reveal">
+            <img loading="lazy" src="https://images.unsplash.com/photo-1531415074968-036ba1b575da?auto=format&fit=crop&w=900&q=80" alt="Cricket stadium under lights" />
+            <figcaption>Cricket Stadium</figcaption>
+          </figure>
+          <figure class="reveal">
+            <img loading="lazy" src="https://images.unsplash.com/photo-1581092335878-2d9ff86ca2bf?auto=format&fit=crop&w=700&q=80" alt="Engineering design workbench" />
+            <figcaption>Engineering Design</figcaption>
+          </figure>
+          <figure class="reveal">
+            <button class="gallery-button" id="patentDocsOpen" type="button" aria-haspopup="dialog" aria-controls="patentDocsPanel">
+              <img loading="lazy" src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=700&q=80" alt="Blurred patent style documents" />
+              <figcaption>Patent Documents</figcaption>
+            </button>
+          </figure>
+          <figure class="reveal">
+            <img loading="lazy" src="https://images.unsplash.com/photo-1518779578993-ec3579fee39f?auto=format&fit=crop&w=700&q=80" alt="Technology concept components" />
+            <figcaption>Technology Concepts</figcaption>
+          </figure>
+          <figure class="reveal">
+            <img loading="lazy" src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&w=700&q=80" alt="Innovation team collaboration" />
+            <figcaption>Innovation</figcaption>
+          </figure>
+          <figure class="reveal">
+            <button class="gallery-button" id="newsOpen" type="button" aria-haspopup="dialog" aria-controls="newsPanel">
+              <img loading="lazy" src="news-hindustan-rpsb.jpeg" alt="News article preview" />
+              <figcaption>In-News</figcaption>
+            </button>
+          </figure>
+          <figure class="reveal">
+            <button class="gallery-button" id="startupCertOpen" type="button" aria-haspopup="dialog" aria-controls="startupCertPanel">
+              <img loading="lazy" src="company-logo.png" alt="Startup certificate preview" />
+              <figcaption>Startup Certificates</figcaption>
+            </button>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section id="why">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2>Why Choose Us</h2>
+          <p>A focused engineering approach shaped by innovation, intellectual property and scalable technology.</p>
+        </div>
+        <div class="grid four">
+          <article class="card reveal">
+            <h3>Innovation Driven</h3>
+            <p>Practical engineering innovation for real-world challenges.</p>
+          </article>
+          <article class="card reveal">
+            <h3>Patent Focused</h3>
+            <p>Technology development backed by intellectual property.</p>
+          </article>
+          <article class="card reveal">
+            <h3>Engineering Excellence</h3>
+            <p>Research and design focused engineering work.</p>
+          </article>
+          <article class="card reveal">
+            <h3>Scalable Technology</h3>
+            <p>Engineering technologies designed with scalability as an objective.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2>Contact Us</h2>
+          <p>Send an enquiry through the contact form.</p>
+        </div>
+        <div class="contact-wrap">
+          <form id="contactForm" class="reveal" action="mailto:contact@square-cut.com" method="post" enctype="text/plain" accept-charset="UTF-8">
+            <div class="field">
+              <label for="name">Name</label>
+              <input id="name" name="name" type="text" autocomplete="name" maxlength="80" required />
+            </div>
+            <div class="field">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" autocomplete="email" maxlength="254" required />
+            </div>
+            <div class="field">
+              <label for="phone">Phone</label>
+              <input id="phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" maxlength="20" pattern="[0-9+() .-]{7,20}" />
+            </div>
+            <div class="field">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" maxlength="2000" required></textarea>
+            </div>
+            <button class="btn" type="submit">Submit Enquiry</button>
+            <div class="form-message" id="formMessage" role="status"></div>
+          </form>
+
+          <aside class="reveal">
+            <div class="info-list">
+              <article class="card">
+                <h3>Company Information</h3>
+                <p>Square-Cut Research and Innovation Private Limited</p>
+                <p>Founder: ILU KUMARI</p>
+                <p>Startup India Recognized: DIPP135531</p>
+                <p>Funded under Startup Bihar</p>
+                <p>Email: <a href="mailto:contact@square-cut.com">contact@square-cut.com</a></p>
+                <p>Bhagalpur, Bihar</p>
+              </article>
+              <article class="card">
+                <h3>Startup Location</h3>
+                <p>Bhagalpur, Bihar</p>
+              </article>
+            </div>
+            <div class="map-grid" aria-label="Map for startup location">
+              <div class="map">
+                <h3>Google Map</h3>
+                <iframe loading="lazy" referrerpolicy="no-referrer" sandbox="allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox" src="https://www.google.com/maps?q=Bhagalpur%2C%20Bihar&output=embed" title="Google Map: Bhagalpur, Bihar"></iframe>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h3>Square-Cut Research and Innovation Private Limited</h3>
+          <p>Engineering innovation focused on patented technologies including In-situ Cricket Pitch changer technology, with working domains including cyber laws and cyber security.</p>
+          <div class="socials" aria-label="Social links">
+            <a href="#" aria-label="LinkedIn">in</a>
+            <a href="#" aria-label="X">X</a>
+            <a href="mailto:contact@square-cut.com" aria-label="Email contact@square-cut.com">@</a>
+          </div>
+        </div>
+        <div>
+          <h3>Quick Links</h3>
+          <div class="footer-links">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#technologies">Technologies</a>
+            <a href="#patents">Patents</a>
+            <a href="#video">Video</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#contact">Contact</a>
+          </div>
+        </div>
+        <div>
+          <h3>Recognition</h3>
+          <p>Startup India</p>
+          <p>Startup Bihar</p>
+        </div>
+      </div>
+      <div class="copyright">© <span id="year"></span> Square-Cut Research and Innovation Private Limited. All Rights Reserved.</div>
+    </div>
+  </footer>
+
+  <div class="doc-panel" id="patentDocsPanel" role="dialog" aria-modal="true" aria-labelledby="patentDocsTitle">
+    <div class="doc-dialog">
+      <div class="doc-head">
+        <h3 id="patentDocsTitle">Patent Documents</h3>
+        <button class="icon-btn" id="patentDocsClose" type="button" aria-label="Close patent documents">×</button>
+      </div>
+      <div class="doc-links">
+        <a class="doc-link" href="patent-certificate-india.pdf" target="_blank" rel="noopener noreferrer">
+          <span>Indian Patent Certificate</span>
+          <span>Open PDF</span>
+        </a>
+        <a class="doc-link" href="patent-certificate-south-africa.pdf" target="_blank" rel="noopener noreferrer">
+          <span>South Africa Certificate of Grant</span>
+          <span>Open PDF</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="doc-panel" id="newsPanel" role="dialog" aria-modal="true" aria-labelledby="newsTitle">
+    <div class="doc-dialog news-dialog">
+      <div class="doc-head">
+        <h3 id="newsTitle">In-News</h3>
+        <button class="icon-btn" id="newsClose" type="button" aria-label="Close news articles">×</button>
+      </div>
+      <div class="news-grid">
+        <article class="news-item">
+          <img src="news-hindustan-rpsb.jpeg" alt="Hindustan news article about pitch change technology" />
+          <span>Hindustan News</span>
+        </article>
+        <article class="news-item">
+          <img src="news-dainik-jagran-digital.jpeg" alt="Dainik Jagran digital news article about cricket pitch technology" />
+          <span>Dainik Jagran Digital Version</span>
+        </article>
+        <article class="news-item">
+          <img src="news-dainik-jagran-print.jpeg" alt="Dainik Jagran print news article about cricket pitch technology" />
+          <span>Dainik Jagran Print</span>
+        </article>
+      </div>
+    </div>
+  </div>
+
+  <div class="doc-panel" id="startupCertPanel" role="dialog" aria-modal="true" aria-labelledby="startupCertTitle">
+    <div class="doc-dialog">
+      <div class="doc-head">
+        <h3 id="startupCertTitle">Startup Certificates</h3>
+        <button class="icon-btn" id="startupCertClose" type="button" aria-label="Close startup certificates">×</button>
+      </div>
+      <div class="doc-links">
+        <a class="doc-link" href="startup-certificate-dipp.pdf" target="_blank" rel="noopener noreferrer">
+          <span>DIPP Startup Certificate</span>
+          <span>Open PDF</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <a class="icon-btn back-top" id="backTop" href="#home" aria-label="Back to top">↑</a>
+
+  <script>
+    const navLinks = document.getElementById("navLinks");
+    const menuToggle = document.getElementById("menuToggle");
+    const themeToggle = document.getElementById("themeToggle");
+    const backTop = document.getElementById("backTop");
+    const form = document.getElementById("contactForm");
+    const formMessage = document.getElementById("formMessage");
+    const patentDocsOpen = document.getElementById("patentDocsOpen");
+    const patentDocsPanel = document.getElementById("patentDocsPanel");
+    const patentDocsClose = document.getElementById("patentDocsClose");
+    const newsOpen = document.getElementById("newsOpen");
+    const newsPanel = document.getElementById("newsPanel");
+    const newsClose = document.getElementById("newsClose");
+    const startupCertOpen = document.getElementById("startupCertOpen");
+    const startupCertPanel = document.getElementById("startupCertPanel");
+    const startupCertClose = document.getElementById("startupCertClose");
+
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    menuToggle.addEventListener("click", () => {
+      navLinks.classList.toggle("open");
+    });
+
+    navLinks.querySelectorAll("a").forEach((link) => {
+      link.addEventListener("click", () => navLinks.classList.remove("open"));
+    });
+
+    themeToggle.addEventListener("click", () => {
+      document.body.classList.toggle("light");
+      localStorage.setItem("theme", document.body.classList.contains("light") ? "light" : "dark");
+    });
+
+    if (localStorage.getItem("theme") === "light") {
+      document.body.classList.add("light");
+    }
+
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+          revealObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.14 });
+
+    document.querySelectorAll(".reveal").forEach((item) => revealObserver.observe(item));
+
+    const counter = document.querySelector(".counter");
+    let counterStarted = false;
+    const counterObserver = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting || counterStarted) return;
+        counterStarted = true;
+        const target = Number(counter.dataset.target);
+        const start = performance.now();
+        const duration = 1400;
+
+        const animate = (now) => {
+          const progress = Math.min((now - start) / duration, 1);
+          const eased = 1 - Math.pow(1 - progress, 3);
+          counter.textContent = Math.floor(eased * target).toLocaleString("en-IN");
+          if (progress < 1) requestAnimationFrame(animate);
+        };
+
+        requestAnimationFrame(animate);
+      });
+    }, { threshold: 0.5 });
+
+    counterObserver.observe(counter);
+
+    window.addEventListener("scroll", () => {
+      backTop.classList.toggle("show", window.scrollY > 600);
+    }, { passive: true });
+
+    patentDocsOpen.addEventListener("click", () => {
+      patentDocsPanel.classList.add("open");
+      patentDocsClose.focus();
+    });
+
+    patentDocsClose.addEventListener("click", () => {
+      patentDocsPanel.classList.remove("open");
+      patentDocsOpen.focus();
+    });
+
+    patentDocsPanel.addEventListener("click", (event) => {
+      if (event.target === patentDocsPanel) {
+        patentDocsPanel.classList.remove("open");
+        patentDocsOpen.focus();
+      }
+    });
+
+    document.addEventListener("keydown", (event) => {
+      if (event.key === "Escape" && patentDocsPanel.classList.contains("open")) {
+        patentDocsPanel.classList.remove("open");
+        patentDocsOpen.focus();
+      }
+    });
+
+    newsOpen.addEventListener("click", () => {
+      newsPanel.classList.add("open");
+      newsClose.focus();
+    });
+
+    newsClose.addEventListener("click", () => {
+      newsPanel.classList.remove("open");
+      newsOpen.focus();
+    });
+
+    newsPanel.addEventListener("click", (event) => {
+      if (event.target === newsPanel) {
+        newsPanel.classList.remove("open");
+        newsOpen.focus();
+      }
+    });
+
+    document.addEventListener("keydown", (event) => {
+      if (event.key === "Escape" && newsPanel.classList.contains("open")) {
+        newsPanel.classList.remove("open");
+        newsOpen.focus();
+      }
+    });
+
+    startupCertOpen.addEventListener("click", () => {
+      startupCertPanel.classList.add("open");
+      startupCertClose.focus();
+    });
+
+    startupCertClose.addEventListener("click", () => {
+      startupCertPanel.classList.remove("open");
+      startupCertOpen.focus();
+    });
+
+    startupCertPanel.addEventListener("click", (event) => {
+      if (event.target === startupCertPanel) {
+        startupCertPanel.classList.remove("open");
+        startupCertOpen.focus();
+      }
+    });
+
+    document.addEventListener("keydown", (event) => {
+      if (event.key === "Escape" && startupCertPanel.classList.contains("open")) {
+        startupCertPanel.classList.remove("open");
+        startupCertOpen.focus();
+      }
+    });
+
+    form.addEventListener("submit", (event) => {
+      event.preventDefault();
+      if (!form.checkValidity()) {
+        formMessage.textContent = "Please complete the required fields.";
+        form.reportValidity();
+        return;
+      }
+
+      formMessage.textContent = "Thank you. Your enquiry has been prepared for submission.";
+      form.reset();
+    });
+  </script>
+</body>
+</html>
