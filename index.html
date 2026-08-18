@@ -8,7 +8,7 @@
   <meta name="keywords" content="Engineering Innovation, Cricket Technology, Patent, Startup India, Startup Bihar, Flood Management, Energy Generation, LEA Assisting Tools, Cyber Laws, Cyber Security, Innovation, Engineering Startup" />
   <meta name="theme-color" content="#07130d" />
   <meta name="referrer" content="strict-origin-when-cross-origin" />
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; script-src 'self' 'sha256-XNhJd+4owhZ7BRzLx4bLkBFTkU8NGX4/9HcPuySmtnI='; style-src 'self' 'sha256-gnD1VpsNoqqygZhxoM2Ojv2dXWzmZVHbWWluHxwTarU='; img-src 'self' https://images.unsplash.com data:; media-src 'self'; frame-src https://www.google.com; connect-src 'none'; form-action 'self' mailto:; frame-ancestors 'none'; upgrade-insecure-requests; require-trusted-types-for 'script'; trusted-types default" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; script-src 'self' 'sha256-w6RUpg5X2e92gH2yyPVfni2tjYhip0Y9XxhP2gktMbo='; style-src 'self' 'sha256-gnD1VpsNoqqygZhxoM2Ojv2dXWzmZVHbWWluHxwTarU='; img-src 'self' https://images.unsplash.com data:; media-src 'self'; frame-src https://www.google.com; connect-src 'none'; form-action 'self'; frame-ancestors 'none'; upgrade-insecure-requests; require-trusted-types-for 'script'; trusted-types default" />
   <meta http-equiv="X-Content-Type-Options" content="nosniff" />
   <meta http-equiv="Permissions-Policy" content="camera=(), microphone=(), geolocation=(), payment=(), usb=(), accelerometer=(), gyroscope=(), magnetometer=(), interest-cohort=()" />
   <style>
@@ -1194,7 +1194,7 @@
           <p>Send an enquiry through the contact form.</p>
         </div>
         <div class="contact-wrap">
-          <form id="contactForm" class="reveal" action="mailto:contact@square-cut.com" method="post" enctype="text/plain" accept-charset="UTF-8">
+          <form id="contactForm" class="reveal" autocomplete="on">
             <div class="field">
               <label for="name">Name</label>
               <input id="name" name="name" type="text" autocomplete="name" maxlength="80" required />
@@ -1490,7 +1490,23 @@
         return;
       }
 
-      formMessage.textContent = "Thank you. Your enquiry has been prepared for submission.";
+      const formData = new FormData(form);
+      const name = String(formData.get("name") || "").trim();
+      const email = String(formData.get("email") || "").trim();
+      const phone = String(formData.get("phone") || "").trim();
+      const message = String(formData.get("message") || "").trim();
+      const subject = `Website enquiry from ${name}`;
+      const body = [
+        `Name: ${name}`,
+        `Email: ${email}`,
+        `Phone: ${phone || "Not provided"}`,
+        "",
+        "Message:",
+        message
+      ].join("\n");
+
+      window.location.href = `mailto:contact@square-cut.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+      formMessage.textContent = "Opening your email app to send the enquiry to contact@square-cut.com.";
       form.reset();
     });
   </script>
